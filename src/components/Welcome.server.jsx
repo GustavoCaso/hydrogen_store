@@ -5,7 +5,7 @@ import {
   Link,
   gql,
 } from '@shopify/hydrogen';
-import {Suspense} from 'react';
+import { Suspense } from 'react';
 
 function ExternalIcon() {
   return (
@@ -23,7 +23,7 @@ function ExternalIcon() {
   );
 }
 
-function DocsButton({url, label}) {
+function DocsButton({ url, label }) {
   return (
     <a
       href={url}
@@ -44,11 +44,11 @@ function BoxFallback() {
 }
 
 function StorefrontInfo() {
-  const {languageCode} = useShop();
+  const { languageCode } = useShop();
 
-  const {data} = useShopQuery({
+  const { data } = useShopQuery({
     query: QUERY,
-    variables: {language: languageCode},
+    variables: { language: languageCode },
     preload: true,
   });
   const shopName = data ? data.shop.name : '';
@@ -97,11 +97,11 @@ function StorefrontInfo() {
 }
 
 function TemplateLinks() {
-  const {languageCode} = useShop();
+  const { languageCode } = useShop();
 
-  const {data} = useShopQuery({
+  const { data } = useShopQuery({
     query: QUERY,
-    variables: {language: languageCode},
+    variables: { language: languageCode },
     preload: true,
   });
   const products = data && flattenConnection(data.products);
@@ -156,7 +156,7 @@ export default function Welcome() {
           Hello, Hydrogen
         </h1>
         <p className="text-lg mb-8">
-          Welcome to your custom storefront. Let&rsquo;s get building.
+          Welcome to your custom storefront. Gustavo Caso. Let&rsquo;s get building.
         </p>
         <div className="flex flex-col lg:flex-row justify-center items-center gap-8 text-gray-700">
           <DocsButton
