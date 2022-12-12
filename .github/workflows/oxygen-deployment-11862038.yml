@@ -45,6 +45,7 @@ jobs:
           build_command: "HYDROGEN_ASSET_BASE_URL=$OXYGEN_ASSET_BASE_URL yarn build"
           shop_id: 59786395670
           storefront_id: 11862038
+          oxygen_health_check: true
 
       # Create GitHub Deployment
       - name: Create GitHub Deployment
