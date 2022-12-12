@@ -156,7 +156,7 @@ export default function Welcome() {
           Hello, Hydrogen
         </h1>
         <p className="text-lg mb-8">
-          Welcome to your custom storefront. Gustavo Caso. Let&rsquo;s get building. Testing something change
+          Welcome to your custom storefront. Gustavo Caso. Let&rsquo;s get building. Testing something change on oxygenctl-action
         </p>
         <div className="flex flex-col lg:flex-row justify-center items-center gap-8 text-gray-700">
           <DocsButton
