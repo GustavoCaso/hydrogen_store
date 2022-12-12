@@ -39,10 +39,12 @@ jobs:
 
       - name: Build and Publish to Oxygen
         id: deploy
-        uses: shopify/oxygenctl-action@v3.2.0
+        uses: shopify/oxygenctl-action@v3
         with:
           oxygen_deployment_token: ${{ secrets.OXYGEN_DEPLOYMENT_TOKEN_11862038 }}
           build_command: "HYDROGEN_ASSET_BASE_URL=$OXYGEN_ASSET_BASE_URL yarn build"
+          shop_id: 59786395670
+          storefront_id: 11862038
 
       # Create GitHub Deployment
       - name: Create GitHub Deployment
